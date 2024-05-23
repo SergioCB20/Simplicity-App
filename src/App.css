@@ -1,0 +1,29 @@
+ #root{
+    width: 100dvw;
+    height:100dvh;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+  }
+  
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .image-animation {
+    opacity: 0;
+    transition: all 1s;
+    z-index: 10;
+  }
+  
+  .image-animation.show {
+    opacity: 1;
+  }
+  
+
+
+
