@@ -10,7 +10,7 @@ export const Home = () => {
     <div
       className={`${
         theme ? "dark" : ""
-      } w-full mt-[60px] overflow-x-hidden flex flex-col bg-white  dark:bg-blue-900`}
+      } w-full mt-[60px] overflow-hidden flex flex-col bg-white  dark:bg-blue-900`}
     >
       <Section1 />
       <Section2/>

@@ -88,6 +88,8 @@ const Section1 = () => {
           text="Probar aplicación"
           onclick={handleTestApp}
           type="important"
+          rol="Link"
+          to="/workspace"
         />
         <Button text="Registrarse" onclick={handleGeneric} />
       </div>

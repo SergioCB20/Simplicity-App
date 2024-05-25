@@ -15,7 +15,7 @@ type HeroSectionProps = {
 const HeroSection:React.FC<HeroSectionProps> = ({title,list,image,imagePos,id}) =>{
     return(
         <div className="w-full h-[calc(100vh-60px)] flex justify-center items-center relative" id={id}>
-        <div className={`w-full h-full lg:w-1/2 ${imagePos==="right" && "order-2"}`}>
+        <div className={`w-full h-full lg:w-1/2 ${imagePos==="right" && "lg:order-2"}`}>
           <ScrollAnimationContainer className="flex justify-center items-center">
             <img
               src={image}
@@ -24,7 +24,7 @@ const HeroSection:React.FC<HeroSectionProps> = ({title,list,image,imagePos,id}) 
             />
           </ScrollAnimationContainer>
         </div>
-        <div className={`w-[80%] h-[80%] absolute bg-white opacity-80 ${imagePos==="right" && "order-1"} lg:w-1/2 lg:h-full lg:static lg:opacity-100 lg:bg-transparent`}>
+        <div className={`w-[80%] h-[80%] absolute bg-white opacity-80 ${imagePos==="right" && "lg:order-1"} lg:w-1/2 lg:h-full lg:static lg:opacity-100 lg:bg-transparent`}>
           <ScrollAnimationContainer>
             <article className="flex flex-col justify-center items-center pt-10 lg:p-12">
               <h1 className="text-3xl mb-5 lg:mb-20 font-semibold text-center text-black dark:text-black lg:dark:text-white">
